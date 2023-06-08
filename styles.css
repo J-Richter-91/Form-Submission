@@ -1,0 +1,124 @@
+body{
+    background-color: hsl(234, 29%, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+p{
+    width: 45ch;
+}
+/*Main container*/
+.container{
+    background-color: white;
+    display: flex;
+    width: 700px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    
+}
+
+/*Left side of main container*/
+.left-side{
+    margin-top: 15px;
+    margin-left: 30px;
+   
+}
+
+/*img right side of container*/
+.right-img{
+    height: 400px;
+    margin-left: 30px;
+}
+
+
+/*Text next to check mark*/
+span{
+    margin-left: 15px;
+}
+
+/*Form Styling*/
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form > input{
+    width: 65%;
+    margin-top: 5px;
+}
+
+/*Submit button*/
+.submit-btn{
+    width: 65%;
+    margin-top: 15px;
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    padding: 8px 10px;
+    font-size: .8rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.submit-btn:hover{
+    cursor: pointer;
+    background-color: hsl(4, 100%, 67%);
+}
+
+/*Dismiss button*/
+.dismiss-btn{
+    width: 65%;
+    margin-top: 15px;
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    padding: 8px 10px;
+    font-size: .8rem;
+    border-radius: 5px;
+    margin-left: 55px;
+    margin-top: 80px;
+    border: none;
+}
+
+.dismiss-btn:hover{
+    cursor: pointer;
+    background-color: hsl(4, 100%, 67%);
+}
+
+.pop-up{
+    background-color: white;
+    width: 400px;
+    border-radius: 15px;
+    height: 350px;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 45px;
+    display:none;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 315px;
+        
+        
+    }
+
+    .right-img{
+       margin: auto;
+    }
+
+    .left-side{
+        margin: auto;
+    }
+
+ form{
+    margin-left: 45px;
+ }
+}
